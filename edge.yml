@@ -1,0 +1,16 @@
+zuul:
+  routes:
+    catalog:
+      service-id: catalog-service 
+    order:
+      service-id: order-service
+
+catalog-service:
+  ribbon:
+    eureka:
+      enabled: true
+
+order-service:
+  ribbon:
+    eureka:
+      enabled: true
