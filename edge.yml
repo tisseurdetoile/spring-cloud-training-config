@@ -1,3 +1,17 @@
+management:
+  security:
+    enabled: false
+zuul:
+  routes:
+    order:
+      path: /orders/**
+      service-id: order
+      strip-prefix: false
+    catalog:
+      path: /items/**
+      service-id: catalog
+      strip-prefix: false 
+  ignored-services: notification 
 security:
   user:
     name: admin
