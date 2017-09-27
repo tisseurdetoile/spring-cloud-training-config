@@ -1,1 +1,7 @@
 messageValue: monMessageQui
+
+---
+spring:
+	profiles: dev
+server:
+	port: 9001

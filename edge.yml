@@ -18,3 +18,9 @@ security:
     password: password
     role:
     - SUPERUSER
+
+ ---
+ spring:
+  profiles: dev
+server:
+  port: 8080
